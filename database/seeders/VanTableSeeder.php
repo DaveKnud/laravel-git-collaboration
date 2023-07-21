@@ -16,16 +16,15 @@ class VanTableSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        $vans = new Van();
+        for ($i=0; $i < 10; $i++) {
+            $vans = new Van();
 
         $vans->brand = $faker->company();
-
-        $vans->description = $faker->paragraph();
-        $vans->image = $faker->imageUrl(360, 360);;
         $vans->color = $faker->colorName();
 
-        $vans->automatic_gear = $faker->boolean();
-        $vans->release_date = $faker->date('Y_m_d');
-        $vans->save();
+            $vans->automatic_gear = $faker->boolean();
+            $vans->release_date = $faker->date('Y_m_d');
+            $vans->save();
+        }
     }
 }
