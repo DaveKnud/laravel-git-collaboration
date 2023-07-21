@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string("brand");
             $table->text("description");
             $table->text("image");
+            $table->string("color");
+            $table->boolean("automatic_gear");
+            $table->date("release_date");
 
             $table->timestamps();
         });

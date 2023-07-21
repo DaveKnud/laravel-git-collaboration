@@ -22,6 +22,10 @@ class VanTableSeeder extends Seeder
 
         $vans->description = $faker->paragraph();
         $vans->image = $faker->imageUrl(360, 360);;
+        $vans->color = $faker->colorName();
+
+        $vans->automatic_gear = $faker->boolean();
+        $vans->release_date = $faker->date('Y_m_d');
         $vans->save();
     }
 }
