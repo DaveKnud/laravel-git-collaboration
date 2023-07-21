@@ -4,11 +4,8 @@
     <ul>
         @foreach ($vans as $van)
             <li>{{ $van->brand }}
-
                 <p>{{ $van->description }}</p>
-
                 <img src="{{ $van->image }}" alt="">
-
             </li>
             <li>{{ $van->brand }}</li>
             @if ($van->color)
