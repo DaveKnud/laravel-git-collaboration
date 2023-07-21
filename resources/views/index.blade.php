@@ -4,6 +4,7 @@
     <ul>
         @foreach ($vans as $van)
             <li>{{ $van->brand }}</li>
+            <li>{{ ($van->automatic_gear)? 'V' : 'F'}}</li>
         @endforeach
     </ul>
 @endsection

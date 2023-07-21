@@ -19,6 +19,8 @@ class VanTableSeeder extends Seeder
         $vans = new Van();
 
         $vans->brand = $faker->company();
+        $vans->automatic_gear = $faker->boolean();
+
         $vans->save();
     }
 }

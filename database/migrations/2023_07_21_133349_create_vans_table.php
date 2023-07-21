@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
 
             $table->string("brand");
+            $table->boolean("automatic_gear");
             $table->timestamps();
         });
     }
