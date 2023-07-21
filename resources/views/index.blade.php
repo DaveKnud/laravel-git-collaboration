@@ -6,6 +6,8 @@
             <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
                 <div class="card-header">{{ $van->brand }}</div>
                 <div class="card-body">
+                    <h5 class="card-title">Link foto</h5>
+                    <p class="card-text">{{ $van->image }}</p>
                     <h5 class="card-title">Descrizione</h5>
                     <p class="card-text">{{ $van->description }}</p>
                     <h5 class="card-title">Colore</h5>
