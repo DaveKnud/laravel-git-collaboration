@@ -10,6 +10,8 @@
                     {{ $van->color }}
                 </li>
             @endif
+            <li>{{ $van->automatic_gear ? 'V' : 'F' }}</li>
+            <li>{{ $van->release_date }}</li>
         @endforeach
     </ul>
 @endsection

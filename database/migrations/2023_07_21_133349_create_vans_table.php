@@ -18,6 +18,8 @@ return new class extends Migration
 
             $table->string("brand");
             $table->string("color");
+            $table->boolean("automatic_gear");
+            $table->date("release_date");
 
             $table->timestamps();
         });
