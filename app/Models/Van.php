@@ -12,5 +12,6 @@ class Van extends Model
     protected $fillable = [
         "brand",
         "automatic_gear",
+        "release_date"
     ];
 }
