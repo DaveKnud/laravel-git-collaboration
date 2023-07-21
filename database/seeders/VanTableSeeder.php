@@ -19,6 +19,9 @@ class VanTableSeeder extends Seeder
         $vans = new Van();
 
         $vans->brand = $faker->company();
+
+        $vans->description = $faker->paragraph();
+        $vans->image = $faker->imageUrl(360, 360);;
         $vans->save();
     }
 }

@@ -3,7 +3,13 @@
 @section('content')
     <ul>
         @foreach ($vans as $van)
-            <li>{{ $van->brand }}</li>
+            <li>{{ $van->brand }}
+
+                <p>{{ $van->description }}</p>
+
+                <img src="{{ $van->image }}" alt="">
+
+            </li>
         @endforeach
     </ul>
 @endsection
