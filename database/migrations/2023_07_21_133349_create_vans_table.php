@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
 
             $table->string("brand");
+            $table->date("release_date");
+
             $table->timestamps();
         });
     }

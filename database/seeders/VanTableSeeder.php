@@ -19,6 +19,7 @@ class VanTableSeeder extends Seeder
         $vans = new Van();
 
         $vans->brand = $faker->company();
+        $vans->release_date = $faker->date('Y_m_d');
         $vans->save();
     }
 }
