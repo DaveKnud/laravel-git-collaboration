@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
 
             $table->string("brand");
+            $table->string("color");
+
             $table->timestamps();
         });
     }

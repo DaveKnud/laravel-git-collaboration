@@ -19,6 +19,8 @@ class VanTableSeeder extends Seeder
         $vans = new Van();
 
         $vans->brand = $faker->company();
+        $vans->color = $faker->colorName();
+
         $vans->save();
     }
 }
