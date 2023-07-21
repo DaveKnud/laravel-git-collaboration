@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string("color");
             $table->boolean("automatic_gear");
             $table->date("release_date");
+            $table->integer("weight");
+
 
             $table->timestamps();
         });

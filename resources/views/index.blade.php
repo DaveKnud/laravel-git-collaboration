@@ -19,6 +19,7 @@
             @endif
             <li>{{ $van->automatic_gear ? 'V' : 'F' }}</li>
             <li>{{ $van->release_date }}</li>
+            <li>{{ $van->weight }}</li>
         @endforeach
     </ul>
 @endsection

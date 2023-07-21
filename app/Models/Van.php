@@ -11,9 +11,9 @@ class Van extends Model
 
     protected $fillable = [
         "brand",
+        "weight",
         "description",
         "image",
-
         "color",
         "automatic_gear",
         "release_date"
