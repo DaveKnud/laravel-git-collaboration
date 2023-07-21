@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean("automatic_gear");
             $table->date("release_date");
             $table->integer("weight");
-
+            $table->integer('engineCapacity');
 
             $table->timestamps();
         });

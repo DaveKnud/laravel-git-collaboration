@@ -16,6 +16,7 @@ class Van extends Model
         "image",
         "color",
         "automatic_gear",
-        "release_date"
+        "release_date",
+        "engineCapacity"
     ];
 }

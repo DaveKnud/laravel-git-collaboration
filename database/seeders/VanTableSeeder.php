@@ -26,6 +26,7 @@ class VanTableSeeder extends Seeder
             $vans->automatic_gear = $faker->boolean();
             $vans->release_date = $faker->date('Y_m_d');
             $vans->weight = $faker->numberBetween(0, 100);
+            $vans->engineCapacity = $faker->randomFloat(1, 30, 120);
 
             $vans->save();
         }
