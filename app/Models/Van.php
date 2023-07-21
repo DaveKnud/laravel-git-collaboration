@@ -11,5 +11,6 @@ class Van extends Model
 
     protected $fillable = [
         "brand",
+        "engineCapacity"
     ];
 }

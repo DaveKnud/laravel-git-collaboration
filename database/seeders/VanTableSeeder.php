@@ -19,6 +19,7 @@ class VanTableSeeder extends Seeder
         $vans = new Van();
 
         $vans->brand = $faker->company();
+        $vans->engineCapacity = $faker->randomFloat(1, 30, 120);
         $vans->save();
     }
 }
